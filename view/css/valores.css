@@ -136,7 +136,12 @@ select {
 }
 
 #val:hover {
-  background-color: var(#a90f2198);
+  background-color: #a90f21b2;
+  color: rgba(255, 255, 255, 0.836);
+}
+
+#val:active {
+  font-size: 1.6em;
 }
 
 footer {
