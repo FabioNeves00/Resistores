@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Value Selector | Resistores</title>
+    <link rel="stylesheet" href="../css/valores.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Calcular a partir dos valores</h1>
+    </header>
+    <main>
+      <div class="inputsContainer">
+        <div class="individualInputContainer">
+          <h2>Fórmula</h2>
+          <input type="text" readonly placeholder="x * y * 10^z" />
+        </div>
+        <div class="individualInputContainer">
+          <h2>Resistencia</h2>
+          <div class="inputUnitContainer">
+            <input type="text" id="resInput" maxlength="20" />
+            <select id="units">
+              <option value="miliOhm">mΩ</option>
+              <option value="Ohm">Ω</option>
+              <option value="kOhm">kΩ</option>
+              <option value="megaOhm">MΩ</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <section class="textInfo">
+        <h3>Cores: blbablalba</h3>
+        <h3>Tolerância: w%</h3>
+        <h3>Intervalo de Resistência: 1231 - 1231</h3>
+      </section>
+      <button id="val" onclick="show()">Calcular</button>
+    </main>
+    <footer>
+      &copy;Fábio Neves, Newton Miranda, João Vitor Cardoso, Marco Aurélio
+    </footer>
+  </body>
+</html>

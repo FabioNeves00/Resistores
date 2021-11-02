@@ -97,6 +97,7 @@ select {
     box-shadow: 4px 0px 26px 5px rgba(0, 0, 0, 0.171);
     cursor: pointer;
 }
+
 option {
     color: white;
     background-color: var(--small-button);
