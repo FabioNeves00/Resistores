@@ -123,7 +123,7 @@ select {
 
 .textInfo {
   text-align: center;
-  margin: 5em 0;
+  margin: 6em 0;
 }
 
 #val {
@@ -140,7 +140,14 @@ select {
 }
 
 #val:hover {
-  background-color: #a90f2198;
+  background-color: #a90f21b7;
+  color: rgba(255, 255, 255, 0.863);
+}
+
+#val:active {
+  font-size: 1.66em;
+  height: 4.8vw;
+  width: 15.8vw;
 }
 
 footer {
