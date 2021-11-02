@@ -45,6 +45,10 @@ h3 {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.507);
 }
 
+h2 {
+  margin-bottom: 12px;
+}
+
 .inputsContainer {
   display: flex;
   flex-direction: row;
