@@ -103,6 +103,10 @@ input {
   border-radius: 15px 0 0 15px;
 }
 
+.individualInputContainer > input {
+  cursor: default;
+}
+
 select {
   text-align: center;
   appearance: none;
@@ -136,7 +140,7 @@ select {
 }
 
 #val:hover {
-  background-color: var(#a90f2198);
+  background-color: #a90f2198;
 }
 
 footer {
