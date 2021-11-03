@@ -19,6 +19,11 @@
 
   <body>
     <header>
+      <a href="../screen/index.html">
+        <div class="shadowContainer">
+          <img src="../img/211686_back_arrow_icon.svg" alt="" />
+        </div>
+      </a>
       <h1>Calcular a partir dos valores</h1>
     </header>
     <main>
@@ -27,10 +32,10 @@
           <h2>Fórmula</h2>
           <input type="number" readonly placeholder="xy * 10^z" />
         </div>
-        <div class="individualInputContainer">
+        <div class="individualInputContainer" id="inputWithUnit">
           <h2>Resistencia</h2>
           <div class="inputUnitContainer">
-            <input type="text" id="resInput" maxlength="20" />
+            <input type="text" id="resInput" />
             <select id="units">
               <option value="miliOhm">mΩ</option>
               <option selected value="Ohm">Ω</option>
