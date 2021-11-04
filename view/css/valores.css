@@ -1,5 +1,36 @@
 
 
+header > a > .shadowContainer > img {
+  position: absolute;
+  filter: invert(99%) sepia(98%) saturate(2%) hue-rotate(279deg)
+    brightness(109%) contrast(101%);
+  width: 5em;
+  right: 0.2em;
+  border-radius: 50%;
+  -webkit-user-drag: none;
+  cursor: pointer;
+}
+
+a {
+  height: 5em;
+}
+
+.shadowContainer {
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 2em;
+  right: 0;
+}
+
+header > a > .shadowContainer:hover {
+  transition: 0.2s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.226);
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -108,7 +139,6 @@ select {
 }
 
 
-
 footer {
   color: white;
   text-align: center;
@@ -120,4 +150,78 @@ footer {
   right: 0;
   bottom: 5px;
   text-align: center;
+}
+
+/* just responsive stuff from now on */
+
+@media only screen and (max-height: 820px) {
+  footer {
+    position: relative;
+    margin-top: 5em;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  header > h1 {
+    font-size: 4vw;
+  }
+
+  #inputWithUnit {
+    margin-top: 4em;
+  }
+
+  footer {
+    position: relative;
+    margin-top: 4em;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  header > a > .shadowContainer > img {
+    width: 50px;
+    right: 7.5px;
+  }
+
+  header > a > .shadowContainer {
+    width: 60px;
+    height: 60px;
+  }
+
+  a {
+    height: 60px;
+  }
+
+  header > h1 {
+    margin-left: 5em;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  header > a > .shadowContainer > img {
+    width: 50px;
+    right: 7.5px;
+  }
+
+  header > a > .shadowContainer {
+    width: 60px;
+    height: 60px;
+  }
+
+  a {
+    height: 60px;
+  }
+
+  header > h1 {
+    margin-left: 5em;
+    font-size: 15px;
+  }
+
+  input {
+    width: 200px;
+  }
+
+  #val {
+    width: 200px;
+  }
 }
