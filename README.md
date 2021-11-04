@@ -1,6 +1,6 @@
 # Software de cálculo de resistência :zap:
 
-Trabalho interdisciplinar do segundo semestre das matérias de **Programação Orientada a Objetos, Lab. de Eletricidade e Eletrônica e Lab. de Aplicativo Mobile** da faculdade Cesupa.
+Trabalho interdisciplinar do segundo semestre do curso de Ciência da Computação das matérias de **Programação Orientada a Objetos, Lab. de Eletricidade e Eletrônica e Lab. de Aplicativo Mobile** da faculdade Cesupa.
 
 
 
@@ -18,23 +18,23 @@ ps: O pdf íntegro contendo as instruções do trabalho supracitado está dispon
 
 
 
-## Discentes :man_technologist::octocat:
+## Discentes :man_technologist: :octocat:
 
-[Fábio Costa de Oliveira Neves Filho](https://github.com/Anonyminho)
+- [Fábio Costa de Oliveira Neves Filho](https://github.com/Anonyminho)
+- [João Vitor Cardoso Queiroz](https://github.com/darkeaee)
 
-[João Vitor Cardoso Queiroz](https://github.com/darkeaee)
+- [Marco Aurélio Proença Neto](https://github.com/Ninniet5670)
 
-[Marco Aurélio Proença Neto](https://github.com/Ninniet5670)
-
-[Newton Fernando de Souza Miranda Filho](https://github.com/NyKoNTX)
-
+- [Newton Fernando de Souza Miranda Filho](https://github.com/NyKoNTX)
 
 
-## Docentes :man_teacher::woman_teacher:
 
-Alan Marcel Fernades de Souza
+## Docentes :man_teacher: :woman_teacher:
 
-Ricardo Melo Casseb do Carmo
+- Alan Marcel Fernades de Souza
 
-Luciana de Azevedo Vieira
+- Ricardo Melo Casseb do Carmo
+
+- Luciana de Azevedo Vieira
+
 

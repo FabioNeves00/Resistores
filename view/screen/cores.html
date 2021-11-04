@@ -2,83 +2,92 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/cores.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
-    <title>Color Selector | Resistores</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/cores.css" />
+  <link rel="stylesheet" href="../css/global.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="../img/Icons8-Ios7-Industry-Resistor.ico" type="image/x-icon" />
+  <title>Color Selector | Resistores</title>
 </head>
 
 <body>
-    <header>
-        <h1>Calcular a partir das cores</h1>
-    </header>
-    <div id="container">
-        <section>
-            <div class="faixas">
-                <select id="faixas" oninput="generate()">
-                    <option value="3">3 faixas</option>
-                    <option value="4">4 faixas</option>
-                    <option value="5">5 faixas</option>
-                </select>
+  <header>
+    <a href="../screen/index.html">
+      <div class="shadowContainer">
+        <img src="../img/211686_back_arrow_icon.svg" alt="" />
+      </div>
+    </a>
+    <h1>Calcular a partir das cores</h1>
+  </header>
+  <main>
+    <section>
+      <div class="faixas">
+        <select id="faixas" oninput="generate()">
+          <option value="3">3 faixas</option>
+          <option value="4">4 faixas</option>
+          <option value="5">5 faixas</option>
+        </select>
+      </div>
+      <div id="items">
+        <div id="colors">
+          <h3>Faixa 1:</h3>
+          <select id="color1">
+            <option value="0" style="background-color: black;">Preto</option>
+            <option value="1" style="background-color: brown;">Marrom</option>
+            <option value="2" style="background-color: red;">Vermelho</option>
+            <option value="3" style="background-color: orange;">Laranja</option>
+            <option value="4" style="background-color: yellow;">Amarelo</option>
+            <option value="5" style="background-color: green;">Verde</option>
+            <option value="6" style="background-color: blue;">Azul</option>
+            <option value="7" style="background-color: purple;">Lilas</option>
+            <option value="8" style="background-color: gray;">Cinza</option>
+            <option value="9">Branco</option>
+          </select>
+          <h3>Faixa 2:</h3>
+          <select id="color2">
+            <option value="0" style="background-color: black; ">Preto</option>
+            <option value="1" style="background-color: brown;">Marrom</option>
+            <option value="2" style="background-color: red;">Vermelho</option>
+            <option value="3" style="background-color: orange;">Laranja</option>
+            <option value="4" style="background-color: yellow;">Amarelo</option>
+            <option value="5" style="background-color: green;">Verde</option>
+            <option value="6" style="background-color: blue;">Azul</option>
+            <option value="7" style="background-color: purple;">Lilas</option>
+            <option value="8" style="background-color: gray;">Cinza</option>
+            <option value="9">Branco</option>
+          </select>
+          <h3>Faixa 3:</h3>
+          <select id="color3">
+            <option value="0" style="background-color: black;">Preto</option>
+            <option value="1" style="background-color: brown;">Marrom</option>
+            <option value="2" style="background-color: red;">Vermelho</option>
+            <option value="3" style="background-color: orange;">Laranja</option>
+            <option value="4" style="background-color: yellow;">Amarelo</option>
+            <option value="5" style="background-color: green;">Verde</option>
+            <option value="6" style="background-color: blue;">Azul</option>
+            <option value="7" style="background-color: purple;">Lilas</option>
+            <option value="8" style="background-color: gray;">Cinza</option>
+            <option value="9">Branco</option>
+          </select>
+        </div>
+      </div>
+      <h3>
+        Cálculo: <br /><span id="equation">abc*10^d</span> <br /><br />
+        Tolerância: <br /><span id="tolerancia">e%</span> <br /><br />
+        Intervalo de Resistência: <br /><span id="resistance"></span>
+      </h3>
+      </div>
+    </section>
+    <button id="val" onclick="show()">Calcular</button>
+  </main>
 
-            </div>
-            <div id="items">
-                <div id="colors">
-                    <select id="color1">
-                        <option value="0">Preto</option>
-                        <option value="1">Marrom</option>
-                        <option value="2">Vermelho</option>
-                        <option value="3">Laranja</option>
-                        <option value="4">Amarelo</option>
-                        <option value="5">Verde</option>
-                        <option value="6">Azul</option>
-                        <option value="7">Lilas</option>
-                        <option value="8">Cinza</option>
-                        <option value="9">Branco</option>
-                    </select>
-                    <select id="color2">
-                        <option value="0">Preto</option>
-                        <option value="1">Marrom</option>
-                        <option value="2">Vermelho</option>
-                        <option value="3">Laranja</option>
-                        <option value="4">Amarelo</option>
-                        <option value="5">Verde</option>
-                        <option value="6">Azul</option>
-                        <option value="7">Lilas</option>
-                        <option value="8">Cinza</option>
-                        <option value="9">Branco</option>
-                    </select>
-                    <select id="color3">
-                        <option value="0">Preto</option>
-                        <option value="1">Marrom</option>
-                        <option value="2">Vermelho</option>
-                        <option value="3">Laranja</option>
-                        <option value="4">Amarelo</option>
-                        <option value="5">Verde</option>
-                        <option value="6">Azul</option>
-                        <option value="7">Lilas</option>
-                        <option value="8">Cinza</option>
-                        <option value="9">Branco</option>
-                    </select>
-                </div>
-                <h3>
-                    Cálculo: <br><span id="equation">abc*10^d</span>
-                    <br><br>
-                    Tolerância: <br><span id="tolerancia">e%</span>
-                    <br><br>
-                    Intervalo de Resistência: <br><span id="resistance"></span>
-                </h3>
-            </div>
-        </section>
-        <button id='val' onclick="show()">Calcular</button>
-    </div>
-
-    <footer>&copy;Fábio Neves, Newton Miranda, João Vitor Cardoso, Marco Aurélio</footer>
-    <script src="../../controller/logic/Resistor.js"></script>
-    <script src="../../controller/logic/cores.js"></script>
+  <footer>
+    &copy;Fábio Neves, Newton Miranda, João Vitor Cardoso, Marco Aurélio
+  </footer>
+  <script src="../../controller/logic/Resistor.js"></script>
+  <script src="../../controller/logic/cores.js"></script>
 </body>
 
 </html>
