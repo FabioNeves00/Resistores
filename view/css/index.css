@@ -22,18 +22,18 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: var(--small-button)
+  background: var(--small-button);
 }
 
 header {
   margin: 0;
   background-color: var(--header);
-  width: 100%;
   height: 8em;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 10px 35px 15px rgba(32, 37, 46, 0.65);
+  text-align: center;
 }
 
 header h1 {
@@ -44,39 +44,44 @@ header h1 {
   text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.49);
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
 #container {
   width: 100%;
-  height: 100%;
-
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 
-h3 {
+h2 {
   margin: 0;
   color: white;
   font-weight: bold;
   font-size: 1em;
-  line-height: 2vw;
+  line-height: 2em;
 }
 
-h4 {
-  margin: 7.5%;
+h3 {
+  margin: 7.5em 0 7.5em 0;
   color: white;
   font-weight: bold;
   font-size: 1.2em;
-  line-height: 2vw;
+  line-height: 2em;
 }
 
 #val {
-  width: 16vw;
-  height: 5vw;
+  width: 12em;
+  height: 4em;
   background-color: var(--big-button);
-  margin-inline: 5%;
   color: white;
-  border-width: 0;
+  border: none;
   border-radius: 5px;
   font-size: 1.7em;
   font-weight: bolder;
@@ -104,10 +109,42 @@ footer {
 }
 
 .buttons {
-  width: 100%;
-  height: 100%;
-
+  width: 70%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* responsive stuff */
+
+@media only screen and (max-height: 780px) {
+  footer {
+    position: relative;
+    margin-top: 10em;
+  }
+}
+
+@media only screen and (max-height: 870px) and (max-width: 932px) {
+  footer {
+    position: relative;
+    margin-top: 5em;
+  }
+}
+
+@media only screen and (max-width: 932px) {
+  .secondButton {
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    margin: 5em 0 5em 0;
+    font-size: 20px;
+  }
 }

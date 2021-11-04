@@ -271,6 +271,7 @@ footer {
   header > a > .shadowContainer {
     width: 60px;
     height: 60px;
+    transform: translateX(-1.2em);
   }
 
   a {
