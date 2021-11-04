@@ -1,0 +1,200 @@
+:root {
+  --background: #323232;
+  --big-button: #a90f21;
+  --small-button: #707070;
+  --header: #20252e;
+  font-family: "Roboto";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  background-color: var(--background);
+  height: 100%;
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--small-button);
+}
+
+header {
+  background-color: var(--header);
+  height: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 35px 15px rgba(32, 37, 46, 0.65);
+}
+
+header h1 {
+  margin: 0;
+  color: white;
+  font-size: 2.4em;
+  font-weight: bold;
+  text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.49);
+}
+
+footer {
+  color: white;
+  text-align: center;
+  font-size: 0.8em;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  text-align: center;
+}
+
+header > a > .shadowContainer > img {
+  position: absolute;
+  filter: invert(99%) sepia(98%) saturate(2%) hue-rotate(279deg)
+    brightness(109%) contrast(101%);
+  width: 5em;
+  right: 0.2em;
+  border-radius: 50%;
+  -webkit-user-drag: none;
+  cursor: pointer;
+}
+
+a {
+  height: 5em;
+}
+
+.shadowContainer {
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 2em;
+  right: 0;
+}
+
+header > a > .shadowContainer:hover {
+  transition: 0.2s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.226);
+}
+
+#val {
+  width: 11em;
+  height: 3em;
+  background-color: var(--big-button);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.7em;
+  font-weight: bolder;
+  cursor: pointer;
+  box-shadow: 4px 0px 26px 5px rgba(0, 0, 0, 0.102);
+}
+
+#val:hover {
+  background-color: #a90f21b7;
+  color: rgba(255, 255, 255, 0.863);
+}
+
+#val:active {
+  font-size: 1.66em;
+  width: 11em;
+  height: 3em;
+}
+
+@media only screen and (max-height: 820px) {
+  footer {
+    position: relative;
+    margin-top: 5em;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  header > h1 {
+    font-size: 4vw;
+  }
+
+  #inputWithUnit {
+    margin-top: 4em;
+  }
+
+  footer {
+    position: relative;
+    margin-top: 4em;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  header > a > .shadowContainer > img {
+    width: 50px;
+    right: 7.5px;
+  }
+
+  header > a > .shadowContainer {
+    width: 60px;
+    height: 60px;
+  }
+
+  a {
+    height: 60px;
+  }
+
+  header > h1 {
+    margin-left: 5em;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  header > a > .shadowContainer > img {
+    width: 50px;
+    right: 7.5px;
+  }
+
+  header > a > .shadowContainer {
+    width: 60px;
+    height: 60px;
+    transform: translateX(-1.2em);
+  }
+
+  a {
+    height: 60px;
+  }
+
+  header > h1 {
+    margin-left: 5em;
+    font-size: 15px;
+  }
+
+  input {
+    width: 200px;
+  }
+
+  #val {
+    width: 200px;
+  }
+
+  select {
+    width: 200px;
+  }
+
+  #colors {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #colors > h3 {
+    margin-top: 20px;
+    margin-bottom: 12px;
+  }
+}
