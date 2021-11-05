@@ -116,6 +116,37 @@ input {
   flex-wrap: nowrap;
 }
 
+.rightInputsContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.rightInputsContainer > h2 {
+  margin-top: 1.2em;
+}
+
+.toleranceInput {
+  width: 21.35em;
+  text-align: left;
+  text-indent: 24px;
+  -webkit-appearance: none;
+}
+
 select {
   text-align: center;
   appearance: none;
@@ -128,12 +159,25 @@ select {
   background-color: var(--small-button);
   border-radius: 0 15px 15px 0;
   cursor: pointer;
-  margin-left: 5px;
+  margin-left: 0.35em;
+}
+
+.toleranceContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.toleranceContainer > p {
+  position: absolute;
+  transform: translateX(+6.7em);
+  font-size: 22px;
+  color: white;
 }
 
 .textInfo {
   text-align: center;
-  margin: 6em 0;
+  margin: 5em 0 4em 0;
 }
 
 footer {
@@ -151,10 +195,10 @@ footer {
 
 /* just responsive stuff from now on */
 
-@media only screen and (max-height: 820px) {
+@media only screen and (max-height: 860px) {
   footer {
     position: relative;
-    margin-top: 5em;
+    margin-top: 2.2em;
   }
 }
 
@@ -216,7 +260,15 @@ footer {
   }
 
   input {
-    width: 200px;
+    width: 13em;
+  }
+
+  .toleranceInput {
+    width: 16.35em;
+  }
+
+  .toleranceContainer > p {
+    transform: translateX(+4.8em);
   }
 
   #val {

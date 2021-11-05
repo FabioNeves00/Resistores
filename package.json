@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "electron": "^15.3.0",
+    "jquery-mask-plugin": "^1.14.16",
     "nodemon": "^2.0.14"
   }
 }

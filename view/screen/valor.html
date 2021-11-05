@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Value Selector | Resistores</title>
-    <link rel="stylesheet" href="../css/valores.css" />
     <link rel="stylesheet" href="../css/global.css" />
-
+    <link rel="stylesheet" href="../css/valores.css" />
+    <script src="../../controller/logic/valores.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -18,7 +18,6 @@
       type="image/x-icon"
     />
   </head>
-
   <body>
     <header>
       <a href="../screen/index.html">
@@ -36,15 +35,27 @@
         </div>
         <div class="individualInputContainer" id="inputWithUnit">
           <h2>Resistencia</h2>
-          <div class="inputUnitContainer">
-            <input type="number" id="resInput" />
-            <select id="units">
-              <option value="miliOhm">mΩ</option>
-              <option selected value="Ohm">Ω</option>
-              <option value="kOhm">kΩ</option>
-              <option value="megaOhm">MΩ</option>
-              <option value="gigaOhm">GΩ</option>
-            </select>
+          <div class="rightInputsContainer">
+            <div class="inputUnitContainer">
+              <input type="number" id="resInput" />
+              <select id="units">
+                <option value="miliOhm">mΩ</option>
+                <option selected value="Ohm">Ω</option>
+                <option value="kOhm">kΩ</option>
+                <option value="megaOhm">MΩ</option>
+                <option value="gigaOhm">GΩ</option>
+              </select>
+            </div>
+            <h2>Tolerância</h2>
+            <div class="toleranceContainer">
+              <input
+                class="toleranceInput"
+                id="toleranceInput"
+                type="tel"
+                onKeyDown="if(this.value.length==2 && event.keyCode!=8) return false;"
+              />
+              <p>%</p>
+            </div>
           </div>
         </div>
       </div>
