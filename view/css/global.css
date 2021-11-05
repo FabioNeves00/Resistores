@@ -176,15 +176,7 @@ header > a > .shadowContainer:hover {
     font-size: 15px;
   }
 
-  input {
-    width: 200px;
-  }
-
   #val {
-    width: 200px;
-  }
-
-  select {
     width: 200px;
   }
 
