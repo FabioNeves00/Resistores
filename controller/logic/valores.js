@@ -14,7 +14,7 @@ class CalcResistor {
   calcCores(resistencia) { // Entrada aceita String e Numbers
     const res = String(resistencia).split('');
 
-    for (let i = 0;i < res.length;i++) {
+    for (let i in res) {
       if (/[^0-9]/.test(res[i])) { // Remove todos os caracteres não numéricos
         res.pop(i);
         i--;
