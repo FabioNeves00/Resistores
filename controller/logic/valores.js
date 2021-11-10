@@ -30,6 +30,8 @@ class CalcResistor {
     } else if (res[2] == res[3] && res.length - 2 < 10) {
       resistor.push(this.#cores[Number(res[2])]);
       resistor.push(this.#cores[res.length - 2]);
+    } else {
+      if (3 < res.length) resistor.push(this.#cores[Number(res[res.length - 2])]);
     }
 
     return {
@@ -38,7 +40,11 @@ class CalcResistor {
     };
   }
 
-  countChars(array, index) {
+  calcResistor() {
+
+  }
+
+  calcResto(array, value) {
     
   }
 
@@ -61,4 +67,5 @@ class CalcResistor {
 
 const resistor = new CalcResistor();
 
-console.log(resistor.calcCores('')); // Input aqui pra testar
+for (let i = 1;i < 1000;i++) console.log(i, resistor.calcCores(i)); 
+// Input aqui pra testar
