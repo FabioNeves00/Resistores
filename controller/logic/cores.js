@@ -5,6 +5,9 @@ function catchValues() {
         arm.push(element.options[element.selectedIndex].value)
     });
     arm.shift()
+    if (arm.length === 3) {
+        arm.push(20)
+    }
     return arm
 }
 
@@ -29,7 +32,7 @@ function generate() {
             <option value="9">Branco</option>
         </select>`
     }
-    if(qntd == 3) {
+    if (qntd == 3) {
         div.innerHTML += `
         <h3>Faixa 3:</h3>
         <select id="color1">
@@ -57,12 +60,11 @@ function generate() {
 }
 
 function show() {
-    const resistor = new Resistor()
+    const resistor = new Resistor(catchValues())
     const int_resis = document.getElementById('resistance')
     const tolerancia = document.getElementById('tolerancia')
     const equation = document.getElementById('equation')
-    resistor.setCores(catchValues())
     equation.innerHTML = `${resistor.getEquation()} = ${resistor.sumCores()[0]} Ω`
-    tolerancia.innerHTML = `${catchValues()[catchValues().length - 1] != 0 ? catchValues()[catchValues().length - 1]:20}%`
+    tolerancia.innerHTML = `${catchValues()[catchValues().length - 1] != 0 ? catchValues()[catchValues().length - 1] : 20}%`
     int_resis.innerHTML = `De ${resistor.getOhms('cor')[0]} até ${resistor.getOhms('cor')[1]}`
 }
