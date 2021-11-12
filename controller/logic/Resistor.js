@@ -4,15 +4,30 @@ class Resistor {
     #min
     #calc
     #resistencia
-    #tolerancia
     #lista_cores = [
         "Preto", "Marrom", "Vermelho",
         "Laranja", "Amarelo", "Verde",
         "Azul", "Violeta", "Cinza",
         "Branco", "Dourado", "Prateado"];
 
-    constructor(cores) {
+    constructor() {
+        // bolsonaro
+    }
+
+    getResistencia() {
+        return this.#resistencia;
+    }
+
+    setResistencia(value) {
+        this.#resistencia = value;
+    }
+
+    setCores(cores) {
         this.#cores = cores;
+    }
+
+    getCores() {
+        return this.#cores;
     }
 
     calcCores(resistencia) { // Entrada aceita String e Numbers
@@ -40,30 +55,6 @@ class Resistor {
             resistor,
             resto: 0
         };
-    }
-
-    getResistencia() {
-        return this.#resistencia;
-    }
-
-    getTolerancia() {
-        return this.#tolerancia;
-    }
-
-    setResistencia(value) {
-        this.#resistencia = value;
-    }
-
-    setTolerancia(value) {
-        this.#tolerancia = value;
-    }
-
-    setCores(cores) {
-        this.#cores = cores;
-    }
-
-    getCores() {
-        return this.#cores;
     }
 
     getEquation() {

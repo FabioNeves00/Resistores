@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "controller/server/main.js",
-  "type": "module",
   "scripts": {
     "start": "electron ."
   },

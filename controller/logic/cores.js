@@ -60,10 +60,11 @@ function generate() {
 }
 
 function show() {
-    const resistor = new Resistor(catchValues())
+    const resistor = new Resistor()
     const int_resis = document.getElementById('resistance')
     const tolerancia = document.getElementById('tolerancia')
     const equation = document.getElementById('equation')
+    resistor.setCores(catchValues())
     equation.innerHTML = `${resistor.getEquation()} = ${resistor.sumCores()[0]} Ω`
     tolerancia.innerHTML = `${catchValues()[catchValues().length - 1] != 0 ? catchValues()[catchValues().length - 1] : 20}%`
     int_resis.innerHTML = `De ${resistor.getOhms('cor')[0]} até ${resistor.getOhms('cor')[1]}`
