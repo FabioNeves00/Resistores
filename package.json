@@ -1,5 +1,5 @@
 {
-  "name": "resistores",
+  "name": "CalcResistance",
   "version": "1.0.0",
   "description": "",
   "main": "controller/server/main.js",

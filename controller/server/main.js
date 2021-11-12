@@ -5,6 +5,9 @@ function createWindow() {
     width: 1400,
     height: 900,
     icon: "view/img/Icons8-Ios7-Industry-Resistor.ico",
+    webPreferences: {
+      devTools: false
+    }
   });
   window.loadFile("view/screen/index.html");
   window.removeMenu();
