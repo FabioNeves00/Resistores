@@ -11,7 +11,7 @@ class Resistor {
         "Branco", "Dourado", "Prateado"];
 
     constructor() {
-        // bolsonaro
+        // clicker do bolsonaro
     }
 
     getResistencia() {
