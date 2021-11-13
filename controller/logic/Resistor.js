@@ -101,9 +101,13 @@ class Resistor {
                 for (let i = 0; i < 2; i++)
                     resistor.push(this.#lista_cores[Number(res[i])]);
 
-                if (res[1] == res[2] && res.length - 1 < 10) {
-                    resistor.push(this.#lista_cores[res.length - 1]);
-                } else if (res[2] == res[3] && res.length - 2 < 10) {
+                if (res.length < 3)  { // 10 OK
+                    resistor.push(this.#cores[0]);
+                    if (res.length < 2) { // 1 OK
+                        resistor[1] = this.#lista_cores[0];
+                        resistor[2] = this.#lista_cores[10];
+                    }
+                } else if (res.length < 4 && res[1] == res[2]) {
                     resistor.push(this.#lista_cores[Number(res[2])]);
                     resistor.push(this.#lista_cores[res.length - 2]);
                 }
