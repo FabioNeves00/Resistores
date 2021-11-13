@@ -4,19 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Value Selector | Resistores</title>
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/valores.css" />
-    <script src="../../controller/logic/valores.js"></script>
+    <script src="../../controller/logic/Resistor.js"></script>
+    <script defer src="../../controller/logic/valores.js"></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+    rel="stylesheet"
     />
     <link
-      rel="shortcut icon"
-      href="../img/Icons8-Ios7-Industry-Resistor.ico"
-      type="image/x-icon"
+    rel="shortcut icon"
+    href="../img/Icons8-Ios7-Industry-Resistor.ico"
+    type="image/x-icon"
     />
+    <title>Value Selector | CalcResistance</title>
   </head>
   <body>
     <header>
@@ -39,22 +40,11 @@
             <div class="inputUnitContainer">
               <input type="number" id="resInput" />
               <select id="units">
-                <option value="miliOhm">mΩ</option>
-                <option selected value="Ohm">Ω</option>
-                <option value="kOhm">kΩ</option>
-                <option value="megaOhm">MΩ</option>
-                <option value="gigaOhm">GΩ</option>
+                <option selected value="0">Ω</option>
+                <option value="3">kΩ</option>
+                <option value="6">MΩ</option>
+                <option value="9">GΩ</option>
               </select>
-            </div>
-            <h2>Tolerância</h2>
-            <div class="toleranceContainer">
-              <input
-                class="toleranceInput"
-                id="toleranceInput"
-                type="tel"
-                onKeyDown="if(this.value.length==2 && event.keyCode!=8) return false;"
-              />
-              <p>%</p>
             </div>
           </div>
         </div>
@@ -64,7 +54,7 @@
         <h3>Tolerância: w%</h3>
         <h3>Intervalo de Resistência: 1231 - 1231</h3>
       </section>
-      <button id="val" onclick="">Calcular</button>
+      <button id="val" onclick="show()">Calcular</button>
     </main>
     <footer>
       &copy;Fábio Neves, Newton Miranda, João Vitor Cardoso, Marco Aurélio
