@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Value Selector | CalcResistance</title>
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/valores.css" />
     <script src="../../controller/logic/Resistor.js"></script>
@@ -50,9 +51,7 @@
         </div>
       </div>
       <section class="textInfo">
-        <h3>Cores: blbablalba</h3>
-        <h3>Tolerância: w%</h3>
-        <h3>Intervalo de Resistência: 1231 - 1231</h3>
+        <h3>Cores: <span id="color_list">None</span></h3>
       </section>
       <button id="val" onclick="show()">Calcular</button>
     </main>
