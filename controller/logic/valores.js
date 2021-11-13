@@ -3,5 +3,5 @@ function show() {
   let unit = document.getElementById('units')
   let resis = Number(document.getElementById('resInput').value) * (10 ** unit.options[unit.selectedIndex].value)
   resistor.setResistencia(resis)
-  console.log(resistor.getOhms('valor'));
+  document.getElementById('color_list').innerHTML = resistor.getOhms('valor').resistor
 }
