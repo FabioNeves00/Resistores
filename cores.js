@@ -35,7 +35,7 @@ function generate() {
     if (qntd == 3) {
         div.innerHTML += `
         <h3>Faixa 3:</h3>
-        <select id="color1">
+        <select id="color3">
             <option value="0" style="background-color: black;">Preto</option>
             <option value="1" style="background-color: brown;">Marrom</option>
             <option value="2" style="background-color: red;">Vermelho</option>
