@@ -2,10 +2,10 @@
 
 Trabalho interdisciplinar do segundo semestre do curso de Ciência da Computação das matérias de **Programação Orientada a Objetos, Lab. de Eletricidade e Eletrônica e Lab. de Aplicativo Mobile** da faculdade Cesupa.
 
+ - Site para facil acesso: [CLIQUE AQUI](https://fabioneves00.github.io/Resistores/)
 
 
 ## Sumário :open_book:
-
 
 
 ## Síntese do trabalho :books:
