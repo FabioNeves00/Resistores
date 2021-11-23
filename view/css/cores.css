@@ -28,13 +28,15 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 24em;
+  width: 37em;
   height: fit-content;
 }
 
 #colors {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .faixas {
@@ -58,6 +60,7 @@ select {
   width: 17em;
   height: 4em;
   margin-bottom: 1.2vw;
+  margin-right: 17px;
   text-indent: 24px;
   color: white;
   background-color: var(--small-button);
@@ -97,14 +100,56 @@ span {
   font-size: 0.7em;
 }
 
-#colors > h3 {
+#colors > div > h3 {
   width: fit-content;
   font-size: 1.3em;
   margin: 0;
+  margin-top: 0.8vw;
   margin-bottom: 0.6vw;
 }
 
+#val {
+  margin-top: 1.4vw;
+}
+
+@media only screen and (max-width: 1024px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+  #faixas {
+    width: 60%;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  #colors > div > h3 {
+    font-size: 2em;
+  }
+  #items {
+    height: fit-content;
+    margin-bottom: 6em;
+  }
+  select {
+    font-size: 1.4em;
+    width: 22em;
+  }
+  #colors{
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
 @media only screen and (max-width: 970px) {
+  header h1 {
+    font-size: 1.3em;
+  }
+  section {
+    flex-direction: row;
+  }
   #faixas {
     width: 60%;
   }
@@ -121,5 +166,87 @@ span {
   #colors{
     width: 100%;
     margin-left: 0;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+  #faixas {
+    width: 70%;
+  }
+  h3 {
+    font-size: 3em;
+    margin-bottom: 4em;
+  }
+  #colors > div > h3 {
+    font-size: 2em;
+  }
+  #items {
+    height: fit-content;
+    margin-bottom: 6em;
+  }
+  select {
+    font-size: 1.6em;
+    width: 22em;
+  }
+  #colors{
+    width: 100%;
+    margin-left: 0;
+  }
+  footer {
+    font-size: 0.7em;
+  }
+
+}
+
+@media only screen and (max-width: 540px) {
+  header h1 {
+    margin-left: 70px;
+  }
+  #faixas {
+    width: 300px;
+  }
+  #colors > div > h3 {
+    font-size: 1.3em;
+  }
+  select {
+    width: 300px;
+    font: inherit;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 1.7em;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  #faixas {
+    width: 300px;
+  }
+  #colors > div > h3 {
+    font-size: 1.3em;
+  }
+  select {
+    width: 300px;
+    font: inherit;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 1.7em;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  header h1 {
+    font-size: 1em;
+  }
+  #faixas {
+    width: 250px;
+  }
+  select {
+    width: 250px;
   }
 }
