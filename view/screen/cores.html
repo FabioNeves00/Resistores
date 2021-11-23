@@ -5,13 +5,13 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/cores.css" />
-  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="global.css" />
+  <link rel="stylesheet" href="cores.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <link rel="shortcut icon" href="../img/Icons8-Ios7-Industry-Resistor.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="Icons8-Ios7-Industry-Resistor.ico" type="image/x-icon">
   <title>Color Selector | CalcResistance</title>
-  <script src="../../controller/logic/Resistor.js"></script>
-  <script defer src="../../controller/logic/cores.js"></script>
+  <script src="Resistor.js"></script>
+  <script defer src="cores.js"></script>
 </head>
 
 <body>
@@ -34,45 +34,51 @@
       </div>
       <div id="items">
         <div id="colors">
-          <h3>Faixa 1:</h3>
-          <select id="color1">
-            <option value="0" style="background-color: black;">Preto</option>
-            <option value="1" style="background-color: brown;">Marrom</option>
-            <option value="2" style="background-color: red;">Vermelho</option>
-            <option value="3" style="background-color: orange;">Laranja</option>
-            <option value="4" style="background-color: yellow;">Amarelo</option>
-            <option value="5" style="background-color: green;">Verde</option>
-            <option value="6" style="background-color: blue;">Azul</option>
-            <option value="7" style="background-color: purple;">Lilas</option>
-            <option value="8" style="background-color: gray;">Cinza</option>
-            <option value="9">Branco</option>
-          </select>
-          <h3>Faixa 2:</h3>
-          <select id="color2">
-            <option value="0" style="background-color: black; ">Preto</option>
-            <option value="1" style="background-color: brown;">Marrom</option>
-            <option value="2" style="background-color: red;">Vermelho</option>
-            <option value="3" style="background-color: orange;">Laranja</option>
-            <option value="4" style="background-color: yellow;">Amarelo</option>
-            <option value="5" style="background-color: green;">Verde</option>
-            <option value="6" style="background-color: blue;">Azul</option>
-            <option value="7" style="background-color: purple;">Lilas</option>
-            <option value="8" style="background-color: gray;">Cinza</option>
-            <option value="9">Branco</option>
-          </select>
-          <h3>Faixa 3:</h3>
-          <select id="color3">
-            <option value="0" style="background-color: black;">Preto</option>
-            <option value="1" style="background-color: brown;">Marrom</option>
-            <option value="2" style="background-color: red;">Vermelho</option>
-            <option value="3" style="background-color: orange;">Laranja</option>
-            <option value="4" style="background-color: yellow;">Amarelo</option>
-            <option value="5" style="background-color: green;">Verde</option>
-            <option value="6" style="background-color: blue;">Azul</option>
-            <option value="7" style="background-color: purple;">Lilas</option>
-            <option value="8" style="background-color: gray;">Cinza</option>
-            <option value="9">Branco</option>
-          </select>
+          <div>
+            <h3>Faixa 1:</h3>
+            <select id="color1">
+              <option value="0" style="background-color: black;">Preto</option>
+              <option value="1" style="background-color: brown;">Marrom</option>
+              <option value="2" style="background-color: red;">Vermelho</option>
+              <option value="3" style="background-color: orange;">Laranja</option>
+              <option value="4" style="background-color: yellow;">Amarelo</option>
+              <option value="5" style="background-color: green;">Verde</option>
+              <option value="6" style="background-color: blue;">Azul</option>
+              <option value="7" style="background-color: purple;">Lilas</option>
+              <option value="8" style="background-color: gray;">Cinza</option>
+              <option value="9">Branco</option>
+            </select>
+          </div>
+          <div>
+            <h3>Faixa 2:</h3>
+            <select id="color2">
+              <option value="0" style="background-color: black;">Preto</option>
+              <option value="1" style="background-color: brown;">Marrom</option>
+              <option value="2" style="background-color: red;">Vermelho</option>
+              <option value="3" style="background-color: orange;">Laranja</option>
+              <option value="4" style="background-color: yellow;">Amarelo</option>
+              <option value="5" style="background-color: green;">Verde</option>
+              <option value="6" style="background-color: blue;">Azul</option>
+              <option value="7" style="background-color: purple;">Lilas</option>
+              <option value="8" style="background-color: gray;">Cinza</option>
+              <option value="9">Branco</option>
+            </select>
+          </div>
+          <div>
+            <h3>Faixa 3:</h3>
+            <select id="color3">
+              <option value="0" style="background-color: black;">Preto</option>
+              <option value="1" style="background-color: brown;">Marrom</option>
+              <option value="2" style="background-color: red;">Vermelho</option>
+              <option value="3" style="background-color: orange;">Laranja</option>
+              <option value="4" style="background-color: yellow;">Amarelo</option>
+              <option value="5" style="background-color: green;">Verde</option>
+              <option value="6" style="background-color: blue;">Azul</option>
+              <option value="7" style="background-color: purple;">Lilas</option>
+              <option value="8" style="background-color: gray;">Cinza</option>
+              <option value="9">Branco</option>
+            </select>
+          </div>
         </div>
       </div>
       <h3>
