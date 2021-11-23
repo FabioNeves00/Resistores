@@ -27,7 +27,6 @@
     <section>
       <div class="faixas">
         <select id="faixas" oninput="generate()">
-          <option value="3">3 faixas</option>
           <option value="4">4 faixas</option>
           <option value="5">5 faixas</option>
         </select>
@@ -37,7 +36,6 @@
           <div>
             <h3>Faixa 1:</h3>
             <select id="color1">
-              <option value="0" style="background-color: black;">Preto</option>
               <option value="1" style="background-color: brown;">Marrom</option>
               <option value="2" style="background-color: red;">Vermelho</option>
               <option value="3" style="background-color: orange;">Laranja</option>
@@ -79,6 +77,14 @@
               <option value="9">Branco</option>
             </select>
           </div>
+          <div>
+            <h3>Faixa de Tolerância:</h3>
+            <select id="tolerate">
+              <option value="5" style="background-color: rgb(213, 216, 56);">Dourado</option>
+              <option value="10" style="background-color: rgb(192, 187, 187);">Prateado</option>
+              <option value="20" selected>Nenhum</option>
+            </select>
+          </div>
         </div>
       </div>
       <h3>
@@ -94,7 +100,7 @@
   <footer>
     &copy;Fábio Neves, Newton Miranda, João Vitor Cardoso, Marco Aurélio
   </footer>
-  
+
 </body>
 
 </html>

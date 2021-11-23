@@ -15,8 +15,22 @@ function generate() {
     const faixa = document.getElementById('faixas');
     const div = document.getElementById('colors');
     let qntd = faixa.options[faixa.selectedIndex].value;
-    div.innerHTML = ''
-    for (let i = 1; i < qntd; i++) {
+    div.innerHTML = `
+        <div>
+            <h3>Faixa 1:</h3>
+            <select id="color1">
+              <option value="1" style="background-color: brown;">Marrom</option>
+              <option value="2" style="background-color: red;">Vermelho</option>
+              <option value="3" style="background-color: orange;">Laranja</option>
+              <option value="4" style="background-color: yellow;">Amarelo</option>
+              <option value="5" style="background-color: green;">Verde</option>
+              <option value="6" style="background-color: blue;">Azul</option>
+              <option value="7" style="background-color: purple;">Lilas</option>
+              <option value="8" style="background-color: gray;">Cinza</option>
+              <option value="9">Branco</option>
+            </select>
+          </div>`
+    for (let i = 1; i < qntd - 1; i++) {
         div.innerHTML += `
         <div>
             <h3>Faixa ${i}:</h3>
@@ -32,26 +46,7 @@ function generate() {
               <option value="8" style="background-color: gray;">Cinza</option>
               <option value="9">Branco</option>
             </select>
-          </div>`
-    }
-    if (qntd == 3) {
-        div.innerHTML += `
-        <div>
-            <h3>Faixa 3:</h3>
-            <select id="color3">
-              <option value="0" style="background-color: black;">Preto</option>
-              <option value="1" style="background-color: brown;">Marrom</option>
-              <option value="2" style="background-color: red;">Vermelho</option>
-              <option value="3" style="background-color: orange;">Laranja</option>
-              <option value="4" style="background-color: yellow;">Amarelo</option>
-              <option value="5" style="background-color: green;">Verde</option>
-              <option value="6" style="background-color: blue;">Azul</option>
-              <option value="7" style="background-color: purple;">Lilas</option>
-              <option value="8" style="background-color: gray;">Cinza</option>
-              <option value="9">Branco</option>
-            </select>
-          </div>`
-        return
+        </div>`
     }
     div.innerHTML +=
         `
