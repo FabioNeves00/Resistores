@@ -25,7 +25,7 @@ function generate() {
             <option value="4" style="background-color: yellow;">Amarelo (4Ω)</option>
             <option value="5" style="background-color: green;">Verde (5Ω)</option>
             <option value="6" style="background-color: blue;">Azul (6Ω)</option>
-            <option value="7" style="background-color: purple;">Lilas (7Ω)</option>
+            <option value="7" style="background-color: purple;">Violeta (7Ω)</option>
             <option value="8" style="background-color: gray;">Cinza (8Ω)</option>
               <option value="9">Branco (9Ω)</option>
             </select>
@@ -46,7 +46,7 @@ function generate() {
                   <option value="4" style="background-color: yellow;">Amarelo (4Ω)</option>
                   <option value="5" style="background-color: green;">Verde (5Ω)</option>
                   <option value="6" style="background-color: blue;">Azul (6Ω)</option>
-                  <option value="7" style="background-color: purple;">Lilas (7Ω)</option>
+                  <option value="7" style="background-color: purple;">Violeta (7Ω)</option>
                   <option value="8" style="background-color: gray;">Cinza (8Ω)</option>
                   <option value="9">Branco (9Ω)</option>
                 </select>
@@ -63,7 +63,7 @@ function generate() {
                   <option value="4" style="background-color: yellow;">Amarelo (4Ω)</option>
                   <option value="5" style="background-color: green;">Verde (5Ω)</option>
                   <option value="6" style="background-color: blue;">Azul (6Ω)</option>
-                  <option value="7" style="background-color: purple;">Lilas (7Ω)</option>
+                  <option value="7" style="background-color: purple;">Violeta (7Ω)</option>
                   <option value="8" style="background-color: gray;">Cinza (8Ω)</option>
                   <option value="9">Branco (9Ω)</option>
                 </select>
