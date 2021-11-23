@@ -58,7 +58,7 @@ class Resistor {
             case 4:
                 return `${this.getCores()[0]}${this.getCores()[1]}*10^${this.getCores()[2]}`
             case 5:
-                return `${this.getCores()[0]}${this.getCores()[1]}${this.getCores()[2]}*10^${this.getCores()[2]}`
+                return `${this.getCores()[0]}${this.getCores()[1]}${this.getCores()[2]}*10^${this.getCores()[3]}`
         }
     }
 
