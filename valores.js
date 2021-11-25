@@ -1,7 +1,7 @@
 function show() {
   const resistor = new Resistor()
-  if(document.getElementById('resInput').value == '') {
-    document.getElementById('color_list').innerHTML = "COLOQUE ALGO NO CAMPO DE RESISTENCIA"
+  if(document.getElementById('resInput').value == '' || document.getElementById('resInput').value == '0') {
+    document.getElementById('color_list').innerHTML = "VALOR INVÁLIDO"
     return
   }
   let unit = document.getElementById('units')
