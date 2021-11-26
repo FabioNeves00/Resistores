@@ -1,16 +1,20 @@
 {
-  "name": "CalcResistance",
+  "name": "calc-resistance",
   "version": "1.0.0",
   "description": "",
   "main": "controller/server/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-packager ."
   },
-  "author": "",
+  "author": "Newton Miranda, Fabio Neves, Marco Aurelio, João Vitor Cardoso",
   "license": "ISC",
   "dependencies": {
-    "electron": "^15.3.0",
+    "electron-packager": "^15.4.0",
     "jquery-mask-plugin": "^1.14.16",
     "nodemon": "^2.0.14"
+  },
+  "devDependencies": {
+    "electron": "^16.0.2"
   }
 }
